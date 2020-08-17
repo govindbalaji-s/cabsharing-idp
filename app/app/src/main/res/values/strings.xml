@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Cab Sharing App</string>
+    <string name="url_enrolled">https://cabsharingiith.website/searchbyuser.php</string>
+    <string name="url_leave">https://cabsharingiith.website/leave.php</string>
+    <string name="url_join">https://cabsharingiith.website/join.php</string>
+    <string name="url_search">https://cabsharingiith.website/search.php</string>
+    <string name="url_insert">https://cabsharingiith.website/insert.php</string>
+    <string name="server_client_id">961932164893-efigepk0otnvodfs5jidioob6debo1u7.apps.googleusercontent.com</string>
+</resources>

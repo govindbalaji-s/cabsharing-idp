@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".search">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+
+    </android.support.v7.widget.Toolbar>
+   <!-- <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="50dp"
+        android:text="Cab Sharing App IITH"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Cab Sharing App IITH" />
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="158dp"
+        android:background="@android:drawable/divider_horizontal_bright"
+        app:layout_constraintBottom_toTopOf="@+id/txtInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+    <ImageButton
+        android:id="@+id/btnLogout"
+        android:layout_width="31dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toRightOf="@id/txtTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logout" />-->
+     <TextView
+        android:id="@+id/txtFrom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="From"
+
+        android:layout_marginTop="20dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintLeft_toRightOf="@id/space1"
+        app:layout_constraintTop_toBottomOf="@id/my_toolbar"
+         />
+    <Space
+        android:id="@+id/space1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@id/txtFrom"
+        app:layout_constraintTop_toBottomOf="@id/my_toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.05"
+        />
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@id/inpFrom"
+        app:layout_constraintTop_toBottomOf="@id/my_toolbar"
+        app:layout_constraintLeft_toRightOf="@id/txtFrom"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.05"
+        />
+    <EditText
+        android:id="@+id/inpFrom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.55"
+        app:layout_constraintLeft_toRightOf="@id/space2"
+        app:layout_constraintTop_toBottomOf="@id/my_toolbar"
+         />
+
+    <TextView
+        android:id="@+id/txtTo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="To"
+
+        android:layout_marginTop="20dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintLeft_toRightOf="@id/space3"
+        app:layout_constraintTop_toBottomOf="@id/txtFrom"/>
+    <Space
+        android:id="@+id/space3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@id/txtTo"
+        app:layout_constraintTop_toBottomOf="@id/txtFrom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.05"
+        />
+    <Space
+        android:id="@+id/space4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@id/inpTo"
+        app:layout_constraintTop_toBottomOf="@id/txtFrom"
+        app:layout_constraintLeft_toRightOf="@id/txtTo"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.05"
+        />
+    <EditText
+        android:id="@+id/inpTo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.55"
+        app:layout_constraintLeft_toRightOf="@id/space4"
+        app:layout_constraintTop_toBottomOf="@id/inpFrom"
+         />
+    <Space
+        android:id="@+id/space5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@id/txtTime"
+        app:layout_constraintTop_toBottomOf="@id/txtTo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.05"
+        />
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Leaving Time"
+
+        android:layout_marginTop="40dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintLeft_toRightOf="@id/space5"
+        app:layout_constraintTop_toBottomOf="@id/txtTo"
+        app:layout_constraintRight_toLeftOf="@id/space7"
+         />
+    <Space
+        android:id="@+id/space7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@id/dateStart"
+        app:layout_constraintTop_toBottomOf="@id/txtTo"
+        app:layout_constraintLeft_toRightOf="@id/txtTime"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.05"
+        />
+
+    <EditText
+        android:id="@+id/dateStart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+
+        android:focusable="false"
+        android:hint="Date"
+        android:inputType="date"
+        app:layout_constraintLeft_toRightOf="@id/space7"
+        app:layout_constraintRight_toLeftOf="@id/space8"
+        app:layout_constraintTop_toBottomOf="@id/txtTo"
+        app:layout_constraintWidth_percent="0.27" />
+
+    <Space
+        android:id="@+id/space8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/dateStart"
+        app:layout_constraintTop_toBottomOf="@id/txtTo"
+        app:layout_constraintRight_toLeftOf="@id/timeStart"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.01"
+        />
+
+    <EditText
+        android:id="@+id/timeStart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+
+        android:focusable="false"
+        android:hint="Time"
+        android:inputType="time"
+        app:layout_constraintLeft_toRightOf="@id/space8"
+        app:layout_constraintTop_toBottomOf="@id/txtTo"
+        app:layout_constraintWidth_percent="0.27" />
+
+    <Space
+        android:id="@+id/space6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dateStart"
+        app:layout_constraintRight_toLeftOf="@id/dateWait"
+        app:layout_constraintWidth_percent="0.4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/dateWait"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="false"
+
+        android:hint="Date"
+        android:inputType="date"
+        app:layout_constraintLeft_toRightOf="@id/space6"
+        app:layout_constraintRight_toLeftOf="@id/space8"
+        app:layout_constraintTop_toBottomOf="@id/dateStart"
+        app:layout_constraintWidth_percent="0.27" />
+
+    <EditText
+        android:id="@+id/timeWait"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="false"
+
+        android:hint="Time"
+        android:inputType="time"
+        app:layout_constraintLeft_toRightOf="@id/space8"
+        app:layout_constraintTop_toBottomOf="@id/timeStart"
+        app:layout_constraintWidth_percent="0.27" />
+    <Space
+        android:id="@+id/space9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dateWait"
+        app:layout_constraintRight_toLeftOf="@id/btnSearch"
+        app:layout_constraintWidth_percent="0.35"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Search"
+        app:layout_constraintLeft_toRightOf="@id/space9"
+        app:layout_constraintTop_toBottomOf="@id/dateWait"
+        app:layout_constraintWidth_percent="0.3" />
+
+</android.support.constraint.ConstraintLayout>

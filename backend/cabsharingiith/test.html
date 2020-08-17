@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js">
+/*    $('#form1').submit(function(){
+
+        var obj = $('form1').serializeJSON();
+
+        $.ajax({
+            type: 'POST',
+            url: 'http://cabsharingiith.epizy.com/insert.php',
+            dataType: 'json',
+            data: JSON.stringify(obj),
+            contentType : 'application/json',
+            success: function(data) {
+                alert(data)
+            }
+        });
+
+       return false;
+   });*/
+ </script>
+</head>
+<body>
+  <form id="form1"  action="http://cabsharingiith.000webhostapp.com/insert.php" method="post" accept-charset="utf-8">
+    <input type="text" name="from" /><br/>
+    <input type="text" name="to" /><br/>
+    <input type="text" name="creator" /><br/>
+    <input type="text" name="starttime" /><br/>
+    <input type="text" name="waittill" /><br/>
+    <input type="text" name="remarks" /><br/>
+    <input id="btn1" type="submit" value="submit" />
+  </form>
+</body>
+</html>
